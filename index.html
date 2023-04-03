@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio06 Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+        <main>
+            <form id="form-atividade">
+                <div class="form-header">
+                    <img src="img/register-svgrepo-com.png" alt="Icone Registro">
+                    <h2>Sistema de Cadastro</h2>
+                </div>
+                <div class="form-body">
+                    <input type="text" name="txtNome" id="nome-pessoa" placeholder="Nome" required>
+                    <input type="tel" name="txtTelefone" id="telefone-pessoa" placeholder="Telefone" required>
+                    <button type="submit" onclick="cadPessoa(txtNome.value, txtTelefone.value)" id="button-submit">Adicionar +</button>
+                </div>
+                <div class="form-table">
+                    <table cellspacing="0" id="tbPessoas">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
